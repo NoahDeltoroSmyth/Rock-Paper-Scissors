@@ -6,15 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/reset.css">
+    <!--<link rel="stylesheet" href="./styles/reset.css">-->
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/home.css">
+    <!--<link rel="stylesheet" href="./styles/home.css">-->
     <title>Document</title>
 </head>
 
 <body>
-    
+        <h1>The good ole fashioned game of Rock, Paper, Scissors</h1>
+        <h2>Rules of the game are as follows:</h2>
+        <ul>
+            <li>You must choose either Rock, Paper or Scissors</li>
+            <li>Rock beats scissors</li>
+            <li>Paper beats rock</li>
+            <li>and Scissors beats paper</li>
+            <li>Now try to beat the computer!</li>
 
+        </ul>
+    <section>
+        <label>
+            <input type="radio" name="RPS" id="rock" value="rock">
+            <img src="./assets/rock.jpeg" alt="rock">
+        </label>
+        <label>
+            <input type="radio" name="RPS" id="paper" value="paper">
+            <img src="./assets/paper.jpeg" alt="paper">
+        </label>
+        <label>
+            <input type="radio" name="RPS" id="scissors" value="scissors">
+            <img src="./assets/scissors.jpeg" alt="scissors">
+        </label>
+    </section>
+    <div class="result-messages">
+        <p id="error" class="hidden">You need to pick rock, paper or scissors</p>
+        <button id="play">Go!</button>
+        <p id="result"></p>
+        <p>You have won <span id="wins">0</span> times</p>
+        <p>You have lost <span id="losses">0</span> times</p>
+    </div>
     <script type="module" src="./app.js"></script>
 </body>
 
