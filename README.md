@@ -1,5 +1,18 @@
 # Alchemy Bootstrap Template
 
+## Rock Paper Scissors
+
+* HTML
+- Radio tags (name tag should all be the same, so the user can only click one at a time) 
+- Each input wrapped in a label with a span below the input
+- Label tag makes it so you can click any part and not just the radio button
+
+* CSS
+- select radio tag by (input[type=radio]{}) ---display: none;
+- psuedo (input[type=radio]:checked + .label{})
+- psuedo options---cursor:___
+
+
 ## Making a plan
 
 (bolded steps are mandatory, unbolded are for more advanced projects)
