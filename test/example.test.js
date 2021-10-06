@@ -1,9 +1,10 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
+import { didUserWin } from "../get-random-throw.js";
 
 const test = QUnit.test;
 
-test('time to test a function', (expect) => {
+test('user: rock, computer: rock', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = true;
