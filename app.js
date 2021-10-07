@@ -27,5 +27,21 @@ Button.addEventListener('click', ()=>{
 
     const userChoice = selected.value;
     const randomThrow = getRandomThrow();
+    const outcome = didUserWin(userChoice, randomThrow);
+
+    if (outcome === 'win'){
+        wins++;
+        Result.textContent = `You win! The computer threw ${randomThrow}`;
+    } else if (outcome === 'lose'){
+        losses++;
+        Result.textContent = `You lose! The computer threw ${randomThrow}`;
+    } else {
+        draws++;
+        Result.textContent = 'You drew! The computer threw the same!';
+    }
     
+    Win.textContent = wins;
+    Loss.textContent = losses;
+    Draw.textContent = draws;
+
 });
