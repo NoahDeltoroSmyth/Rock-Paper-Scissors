@@ -7,5 +7,29 @@ body {
 
 img {
     width: 300px;
+    padding: 20px;
+    border: 2px red solid;
+    border-radius: 10px;
+    margin: 20px;
+    filter: grayscale(100%);
 }
 
+input[type=radio] {
+    display: none;
+}
+
+input[type=radio]:checked + img {
+    filter: grayscale(0%);
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+#error {
+    color: red;
+}
