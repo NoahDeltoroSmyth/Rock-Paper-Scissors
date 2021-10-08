@@ -7,12 +7,13 @@ const Loss = document.getElementById('losses');
 const Draw = document.getElementById('draws');
 const Error = document.getElementById('error');
 const Result = document.getElementById('result');
+const resetButton = document.getElementById('reset-button');
 
 // initialize global state
 let wins = 0;
 let losses = 0;
 let draws = 0;
-         
+        
 // set event listeners 
   // get user input
   // use user input to update state 
@@ -43,5 +44,16 @@ Button.addEventListener('click', ()=>{
     Win.textContent = wins;
     Loss.textContent = losses;
     Draw.textContent = draws;
+
+});
+
+resetButton.addEventListener('click', () => {
+    const selected = document.querySelector('input[type=radio]:checked'); 
+
+    selected.checked  = false;
+
+    Win.textContent = 0;
+    Loss.textContent = 0;
+    Draw.textContent = 0;
 
 });
