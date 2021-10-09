@@ -71,5 +71,15 @@ resetButton.addEventListener('click', () => {
     Result.hidden = true;
 
     resetButton.disabled = true;
+});
+
+resetButton.addEventListener('click', () => {
+    const selected = document.querySelector('input[type=radio]:checked'); 
+
+    selected.checked  = false;
+
+    Win.textContent = 0;
+    Loss.textContent = 0;
+    Draw.textContent = 0;
 
 });
